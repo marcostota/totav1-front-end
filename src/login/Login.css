@@ -1,0 +1,84 @@
+/* Login.css */
+
+/* Login.css */
+
+body {
+
+    height: 100vh;
+    background: linear-gradient(130deg, hsl(300, 40%, 5%), hsl(0, 0%, 98%));
+}
+
+
+
+.container-fluid {
+    background-color: #343a40;
+
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgb(17, 4, 56);
+    border-radius: 10px;
+    margin-top: 150px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(300, 40%, 5%));
+
+
+}
+
+.form-nameapp {
+
+
+    padding: 30px;
+    padding-left: 80px;
+
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}
+
+.form-button:hover {
+    background-color: #0069d9;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.navbar {
+    padding-left: 15px;
+}
+
+
+.btnSign {
+    background-color: #0069d9;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
