@@ -1,0 +1,10 @@
+.form-button-profile {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 25%;
+    border: none;
+    background-color: #007bff;
+    color: white;
+}

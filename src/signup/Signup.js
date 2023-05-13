@@ -112,7 +112,7 @@ function Signup() {
                     You have successfully registered. Please proceed to the login page. Big ass
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={() => navigate("/")}>
+                    <Button variant="primary" onClick={() => navigate("/login")}>
                         Go to Login
                     </Button>
                 </Modal.Footer>

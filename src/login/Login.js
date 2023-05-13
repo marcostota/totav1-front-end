@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
 
 import Form from 'react-bootstrap/Form';
-import jwtDecode from "jwt-decode";
+
 
 function Login() {
     const [username, setUsername] = useState("");
@@ -29,7 +29,6 @@ function Login() {
                 }
             );
 
-
             const token = response.data.token;
             localStorage.setItem("token", token);
 
@@ -39,8 +38,7 @@ function Login() {
                         Authorization: `${token}`,
                     },
                 });
-                navigate("/dashboard");
-                console.log(token);
+                navigate("/");
             } catch (error) {
                 setErrorMessage("Token verification failed");
 
@@ -53,7 +51,7 @@ function Login() {
     return (
         <>
             <Navbar bg="dark" variant="dark" expand="lg">
-                <Navbar.Brand href="/">Tota App</Navbar.Brand>
+                <Navbar.Brand href="/login">Tota App</Navbar.Brand>
                 <Container  >
                     <Nav
                         className="me-auto my-2 " >
@@ -68,7 +66,7 @@ function Login() {
                 <div className="form-container">
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="username" className="form-label">
-                            Username:
+                            Usernamess:
                         </label>
                         <input
                             type="text"
